@@ -1,14 +1,6 @@
 var connection = require("../config/connection.js");
 
 
-function printQuestionMarks(num) {
-    var arr = [];
-    for (var i = 0; i < num; i++) {
-        arr.push("?");
-    }
-    return arr.toString();
-}
-
 function objToSql(ob) {
     var arr = [];
     for (var key in ob) {
@@ -38,11 +30,13 @@ var orm = {
         queryString += " (";
         queryString += cols.toString();
         queryString += ") ";
-        queryString += "VALUES ";
-        queryString += printQuestionMarks(vals.length);
+        queryString += "VALUES (";
+        queryString += "?";
         queryString += ") ";
 
         console.log(queryString);
+        console.log(vals);
+
 
         connection.query(queryString, vals, function (err, data) {
             if (err) {
