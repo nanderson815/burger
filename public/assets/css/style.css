@@ -1,16 +1,29 @@
 
-.title{
-    text-align: center;
-    color: white;
+html { 
+  background: url(https://adorable-home.com/wp-content/uploads/2016/05/Star-Burger-Industrial-Restaurant-Design-1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-p {
-    
+.title{
+    text-align: center;
+    color: #fac564;
+    font-family: 'Monoton', cursive;
+    font-size: 50px;
+    text-shadow: 2px 2px white;
 }
+
 .container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+input{
+    border-radius: px;
+
 }
 
 .card{
@@ -31,8 +44,6 @@ body{
     max-width: 960px;
     margin: 0px auto;
     padding: 10px;
-    background: url(https://adorable-home.com/wp-content/uploads/2016/05/Star-Burger-Industrial-Restaurant-Design-1.jpg) no-repeat;
-    background-size: 100%;
 }
 
 li, label {
