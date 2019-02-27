@@ -1,6 +1,7 @@
 
 .title{
     text-align: center;
+    color: white;
 }
 
 .container{
@@ -13,11 +14,46 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px;
     margin: 10px;
+    border-radius: 10px;
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/food.png");
+}
+
+h2{
+    margin-top: 0px;
+    text-align: center;
+    color: white;
 }
 
 body{
     max-width: 960px;
     margin: 0px auto;
     padding: 10px;
+    background: url(https://adorable-home.com/wp-content/uploads/2016/05/Star-Burger-Industrial-Restaurant-Design-1.jpg) no-repeat;
+    background-size: 100%;
 }
 
+
+.button1 {
+ display:inline-block;
+ padding:0.35em 1.2em;
+ border:0.1em solid #FFFFFF;
+ margin:0 0.3em 0.3em 0;
+ border-radius:0.12em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ font-weight:300;
+ color:#FFFFFF;
+ text-align:center;
+ transition: all 0.2s;
+}
+a.button1:hover{
+ color:#000000;
+ background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+ .button1 {
+  display:block;
+  margin:0.4em auto;
+ }
+}
