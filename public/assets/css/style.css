@@ -10,8 +10,8 @@ html {
 .title{
     text-align: center;
     /* color: #fac564; */
-    font-family: 'Monoton', cursive;
-    font-size: 50px;
+    font-family: 'Playball', cursive;
+    font-size: 80px;
     text-shadow: 2px 2px white;
 }
 
@@ -41,6 +41,9 @@ input{
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     padding: 10px;
     margin: 10px;
+    border-image: url(../images/border.png) 60 60 round !important;
+    border-width: 30px;
+    border-style: solid;
 }
 
 h2{
@@ -65,7 +68,7 @@ li, label {
 margin: 5px;
 color: #fff !important;
 text-transform: uppercase;
-background: #ed3330;
+background: #7b8289;
 padding: 10px;
 border-radius: 5px;
 /* display: inline-block; */

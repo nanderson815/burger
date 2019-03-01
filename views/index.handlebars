@@ -1,8 +1,8 @@
 <div class="container">
-    <h1 class="title">Welcome to the Burger Joint!</h1>
+    <h1 class="title">Burger Joint</h1>
     <div class="cards">
         <div class="exist card">
-            <h2>Burgers on the Menu</h2>
+            <h2>Specialty Burgers</h2>
             <ul>
                 {{#each burgers}}
                 {{#unless devoured}}
@@ -18,7 +18,7 @@
         </div>
 
         <div class="devoured card">
-            <h2>Burgers no Longer on the Menu</h2>
+            <h2>Discontinued Items</h2>
             <ul>
                 {{#each burgers}}
                 {{#if devoured}}
