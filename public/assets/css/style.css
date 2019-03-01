@@ -9,16 +9,27 @@ html {
 
 .title{
     text-align: center;
-    color: #fac564;
+    /* color: #fac564; */
     font-family: 'Monoton', cursive;
     font-size: 50px;
     text-shadow: 2px 2px white;
 }
 
 .container{
+    
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/ricepaper2.png");
+    border-radius: 10px;
+    padding: 0px 20px;
+    border-image: url(../images/border.png) 60 60 round !important;
+    border-width: 30px;
+    border-style: solid;
+
+}
+
+.cards{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 }
 
 input{
@@ -27,30 +38,27 @@ input{
 }
 
 .card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     padding: 10px;
     margin: 10px;
-    border-radius: 10px;
-    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/food.png");
 }
 
 h2{
     margin-top: 0px;
     text-align: center;
-    color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
 body{
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0px auto;
     padding: 10px;
 }
 
 li, label {
     margin: 10px;
-    color: white;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .button1 {

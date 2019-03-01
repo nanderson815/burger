@@ -1,43 +1,44 @@
-<h1 class="title">Welcome to the Burger Joint!</h1>
-
 <div class="container">
-    <div class="exist card">
-        <h2>Burgers you can eat!</h2>
-        <ul>
-            {{#each burgers}}
-            {{#unless devoured}}
-            <li>
-                {{burger_name}}
-                <button class="change-status button1" data-id="{{id}}" data-newdevoured="true">
-                    Eat the burger!
-                </button>
-            </li>
-            {{/unless}}
-            {{/each}}
-        </ul>
-    </div>
-
-    <div class="devoured card">
-        <h2>Burgers that you have eaten!</h2>
-        <ul>
-            {{#each burgers}}
-            {{#if devoured}}
-            <li>{{burger_name}}</li>
-            {{/if}}
-            {{/each}}
-        </ul>
-    </div>
-</div>
-
-<div class="card">
-    <h2>Add a Burger</h2>
-    <form class="create-form">
-
-        <div class="form-group">
-            <label for="name">Buger Name:</label>
-            <input type="text" id="name" name="name">
+    <h1 class="title">Welcome to the Burger Joint!</h1>
+    <div class="cards">
+        <div class="exist card">
+            <h2>Burgers on the Menu</h2>
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}
+                <li>
+                    {{burger_name}}
+                    <button class="change-status button1" data-id="{{id}}" data-newdevoured="true">
+                        Discontinue
+                    </button>
+                </li>
+                {{/unless}}
+                {{/each}}
+            </ul>
         </div>
 
-        <button class="button1" type="submit">Add Burger</button>
-    </form>
+        <div class="devoured card">
+            <h2>Burgers no Longer on the Menu</h2>
+            <ul>
+                {{#each burgers}}
+                {{#if devoured}}
+                <li>{{burger_name}}</li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Add a Burger</h2>
+            <form class="create-form">
+
+                <div class="form-group">
+                    <label for="name">Buger Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <button class="button1" type="submit">Add Burger</button>
+            </form>
+        </div>
+    </div>
 </div>
