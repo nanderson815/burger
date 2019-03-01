@@ -16,9 +16,9 @@ resources:
 env_variables:
   SQL_USER: nta
   SQL_PASSWORD: password
-  SQL_DATABASE: burger_db
-  INSTANCE_CONNECTION_NAME: burger-builder-233114:us-central1:buger-db
+  SQL_DATABASE: burgerdb
+  INSTANCE_CONNECTION_NAME: nta-burger-builder:us-east1:burgerdb
 # [END gae_mysql_env]
 beta_settings:
   # The connection name of your instance, available by using
-  cloud_sql_instances: burger-builder-233114:us-central1:buger-db
+  cloud_sql_instances: nta-burger-builder:us-east1:burgerdb
