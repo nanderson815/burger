@@ -1,24 +1,22 @@
 
 var mysql = require("mysql");
 
-// Google Cloud Platform Connection
-if (process.env.INSTANCE_CONNECTION_NAME) {
-    config = {
-        socketPath: `/cloudsql/${process.env.INSTANCE_CONNECTION_NAME}`,
-        user: process.env.SQL_USER,
-        password: process.env.SQL_PASSWORD,
-        database: process.env.SQL_DATABASE
+var connection = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "admin",
+    database: "burgers_db"
+});
+
+connection.connect(function(err){
+    if (err){
+        console.log("Error: ", err);
+    } else {
+        console.log("Connected as ID ", connection.threadId);
     };
-    // Local DB Connection
-} else {
-    config = {
-        host: "localhost",
-        port: 4040,
-        user: "root",
-        password: "admin",
-        database: "burgers_db"
-    };
-}
-this.connection = mysql.createConnection(config);
+});
 
 module.exports = connection;
+
+
